@@ -1,65 +1,67 @@
-# AI Governance Framework
-### Enterprise-Grade AI Programme Governance for Engineering Directors
+# Agentic AI Architecture Patterns
+### Engineering Director Perspective | AI Product Design and Governance
 
 ---
 
-> *"AI without governance is experimentation. AI with governance is transformation."*
+> *"An agentic AI system is not a chatbot with more steps. It is a decision-making pipeline — and every decision point in that pipeline must be designed, governed, and owned."*
 
 ---
 
 ## Why This Repository Exists
 
-Most organisations deploying AI in 2024–2025 face the same failure pattern:
+Most documentation on agentic AI is written for data scientists and ML engineers — focused on model selection, fine-tuning, and embedding strategies.
 
-- Tools are adopted without security review
-- Experiments run without success criteria
-- ROI is claimed without measurement
-- Production deployments happen without rollback plans
-- Compliance obligations are discovered after deployment — not before
+This repository is written for **Engineering Directors and AI Product Owners** — the people who must answer these questions:
 
-The result: AI initiatives that generate enthusiasm but not enterprise value. Pilot programmes that never reach production. Audit findings that halt transformation programmes mid-flight.
+- How do we design an agentic AI pipeline that is explainable to a business stakeholder?
+- Where do we put humans in the loop, and how do we decide?
+- How do we write product backlog items for AI capabilities?
+- How do we define "done" for an AI feature?
+- How do we govern a system that makes decisions autonomously?
+- What does a production-ready agentic AI case study look like — from problem to deployment?
 
-This framework was built to solve that pattern — from the inside of an active AI transformation programme managing multiple concurrent AI initiatives across engineering teams.
+The patterns here are drawn from active AI programme delivery — not from academic benchmarks or vendor documentation.
 
 ---
 
 ## What Is Inside
 
-| Document | What It Solves |
+| Document | What It Covers |
 |---|---|
-| [5-Pillar AI Governance Model](./5-pillar-ai-governance-model.md) | The complete governance architecture: approval, security, deployment, HITL, and ROI tracking |
-| [AI Tool Evaluation Scorecard](./ai-tool-evaluation-scorecard.md) | How to decide which AI tools enter your approved register — criteria, scoring, and decision rules |
-| [Staged AI Deployment Model](./staged-ai-deployment-model.md) | 3-stage deployment framework with confidence score thresholds and gate criteria |
-| [Responsible AI Checklist](./responsible-ai-checklist.md) | 30-item pre-deployment checklist aligned to ISO/IEC 42001 and NIST AI RMF |
-| [AI Incident Response Protocol](./ai-incident-response-protocol.md) | What happens when an AI system fails in production — escalation, rollback, and communication |
+| [Agentic AI Pipeline Design Guide](./agentic-ai-pipeline-design-guide.md) | The 6-stage pipeline architecture: query classification → retrieval → context assessment → generation → confidence scoring → HITL routing |
+| [HITL Protocol Design](./hitl-protocol-design.md) | When to route to human, how confidence scores are defined, what the handoff looks like, and how to prevent hallucinations from reaching users |
+| [AI Product Backlog Template](./ai-product-backlog-template.md) | How to write epics, stories, and acceptance criteria for AI features — and what "done" means for an AI capability |
+| [Agentic AI Case Study — Intelligent Support System](./agentic-ai-case-study.md) | Anonymised end-to-end case study: problem → architecture decisions → deployment → outcomes |
 
 ---
 
-## The Governance Philosophy
+## The Director's Mental Model for Agentic AI
 
-**Governance is not a brake on AI adoption. It is the accelerator.**
+Before reading any of these documents, internalise this mental model:
 
-Ungoverned AI moves fast in experiments and stalls at the production gate — because it cannot answer the questions that enterprise deployment requires:
+**An agentic AI system is a pipeline of decisions.**
 
-- Is this tool approved for use with our data classification?
-- What is the rollback plan if this fails in production?
-- How do we know it is performing as expected?
-- Who is accountable when it produces a wrong output?
-- Does this meet our audit and compliance obligations?
+At each stage of the pipeline, a decision is made — about what the user is asking, what information to retrieve, how to assess context, what to generate, how confident the system is, and whether a human needs to be involved.
 
-A governance framework answers these questions before they are asked. That is what gets AI from experiment to production — and from production to measurable business value.
+The Director's job is not to make those decisions. The Director's job is to:
+
+1. **Design the pipeline** — ensure each stage exists and has clear purpose
+2. **Define the decision rules** — especially the confidence thresholds that determine HITL routing
+3. **Own the governance** — ensure the pipeline meets security, accuracy, and compliance standards
+4. **Write the product backlog** — translate pipeline stages into engineerable stories with testable acceptance criteria
+5. **Measure the outcomes** — track performance at each stage and at the system level
+
+Understanding the architecture at this level — without needing to implement it — is what distinguishes an AI-literate Engineering Director from one who delegates AI to the team and hopes for the best.
 
 ---
 
-## Standards Alignment
+## Standards and Framework Alignment
 
-This framework is aligned to:
+The patterns in this repository are aligned to:
 
-- **ISO/IEC 42001** — AI Management System standard
-- **NIST AI Risk Management Framework (AI RMF)**
-- **OWASP AI Security and Privacy Guide**
-
-Alignment does not mean compliance by default. It means the framework is designed to support compliance — reducing audit preparation effort and accelerating enterprise approval for AI deployments.
+- **NIST AI RMF** — particularly the MAP and MEASURE functions
+- **ISO/IEC 42001** — AI Management System operational requirements
+- **Google Responsible AI Practices** — transparency, fairness, and human oversight principles
 
 ---
 
@@ -70,4 +72,4 @@ Alignment does not mean compliance by default. It means the framework is designe
 
 ---
 
-*This framework is published to contribute to the engineering leadership and AI governance community. The patterns here are drawn from active programme delivery — not from theory.*
+*These patterns are published to advance the practice of AI product ownership and engineering leadership. If they help you build better AI systems — share what you learn.*
