@@ -1,5 +1,5 @@
 # Agentic AI Architecture Patterns
-### Engineering Director Perspective | AI Product Design and Governance
+### Engineering Leader Perspective | AI Product Design and Governance
 
 ---
 
